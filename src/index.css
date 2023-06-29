@@ -1,13 +1,238 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Coolvetica";
+  src: url("/src/coolvetica\ condensed\ rg_ff4748e7d5edfabbba21820313f826e8.ttf")
+    format("truetype");
+}
+/* Hide the scrollbar track */
+body::-webkit-scrollbar {
+  width: 0.5em;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Style the scrollbar thumb */
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 0.25em;
 }
+
+/* Style the scrollbar track on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+body {
+  background-color: #0c020b;
+  color: white;
+}
+
+header {
+  background-color: black;
+  margin: 0;
+  padding: 0;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.navbar {
+  background: linear-gradient(
+    0deg,
+    rgba(204, 85, 214, 0) 0%,
+    rgba(1, 10, 19, 0.13) 15%,
+    rgba(1, 10, 19, 0.2) 22%,
+    rgba(1, 10, 19, 0.28) 28%,
+    rgba(1, 10, 19, 0.33) 33%,
+    rgba(1, 10, 19, 0.37) 37%,
+    rgba(1, 10, 19, 0.42) 42%,
+    rgba(1, 10, 19, 0.46) 46%,
+    rgba(1, 10, 19, 0.5) 50%,
+    rgba(1, 10, 19, 0.54) 54%,
+    rgba(1, 10, 19, 0.58) 58%,
+    rgba(1, 10, 19, 0.63) 63%,
+    rgba(1, 10, 19, 0.67) 67%,
+    rgba(1, 10, 19, 0.72) 72%,
+    rgba(1, 10, 19, 0.78) 78%,
+    rgba(1, 10, 19, 0.85) 85%,
+    #010a13 100%
+  );
+}
+
+/* .navbar > div {
+  padding: 24px 48px;
+} */
+
+/* Header section css */
+.logo {
+  width: 96px;
+  height: 93.44px;
+}
+
+.options {
+  font-family: "coolvetica", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.button {
+  border-radius: 5px;
+  font-family: "Coolvetica", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.community-text {
+  display: flex;
+  width: 870px;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  font-family: Helvetica;
+  line-height: 28px;
+  letter-spacing: 0.72px;
+}
+
+/* Perk section css */
+
+.perk-parent-div {
+  display: flex;
+
+  padding: 40px 28px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perk-div {
+  display: flex;
+  padding: 19px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid #fff;
+}
+.perk-heading {
+  text-align: center;
+  font-size: 34px;
+  font-family: Coolvetica;
+  line-height: 54px;
+}
+.perk-para {
+  display: flex;
+  width: 456px;
+  flex-direction: column;
+  justify-content: center;
+  color: rgba(245, 242, 255, 0.8);
+  text-align: center;
+  font-size: 18px;
+  font-family: Helvetica;
+  line-height: 32px;
+}
+
+.getaccess {
+  display: flex;
+
+  padding: 0px 168px 0px 159px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Info section css */
+
+.info-section {
+  background-image: linear-gradient(
+    to bottom,
+    #0c020b,
+    #130113,
+    #170119,
+    #19011f,
+    #1a0126
+  );
+}
+
+.info-div {
+  width: 270px;
+  height: 270px;
+  margin: 10px;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14.038px;
+
+  border-radius: 21.057px;
+  border: 0.877px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-heading {
+  color: #fff;
+  font-size: 24.566px;
+  font-family: Coolvetica;
+}
+
+.info-para {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #f5f2ff;
+  text-align: center;
+  font-size: 15.793px;
+  font-family: Helvetica;
+  line-height: 28.076px;
+  width: 196.532px;
+  margin-top: -10px;
+}
+
+.info-design {
+  margin-top: -140px;
+}
+
+/* Services section css */
+
+.services-div {
+  margin: 10px;
+  display: flex;
+  padding: 19px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 11.615px;
+  border: 0.652px solid rgba(255, 255, 255, 0.2);
+  width: 401.104px;
+  height: 287.065px;
+  flex-shrink: 0;
+}
+
+.services-heading {
+  display: flex;
+  width: 208.087px;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 20px;
+  font-family: Coolvetica;
+  line-height: 23.486px;
+  text-transform: capitalize;
+}
+.services-para {
+  display: flex;
+  width: 330px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-size: 16px;
+  font-family: Helvetica;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+}
+
+/* FAQs section css */
