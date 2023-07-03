@@ -9,6 +9,7 @@
 }
 /* Hide the scrollbar track */
 body::-webkit-scrollbar {
+  background-color: #000000;
   width: 0.5em;
 }
 
@@ -121,6 +122,7 @@ header {
   font-size: 34px;
   font-family: Coolvetica;
   line-height: 54px;
+  color: white;
 }
 .perk-para {
   display: flex;
@@ -236,3 +238,14 @@ header {
 }
 
 /* FAQs section css */
+
+.FAQs-section {
+  background-image: linear-gradient(
+    to bottom,
+    #0c020b,
+    #130113,
+    #170119,
+    #19011f,
+    #1a0126
+  );
+}

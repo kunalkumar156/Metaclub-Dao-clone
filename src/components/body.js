@@ -23,11 +23,11 @@ import Accordion from "./accordion";
 // import design3 from "../images/design3.png";
 const Body = () => {
   return (
-    <body>
+    <body className="bg-[#0c020b]">
       {/* FOR PERKS SECTION */}
 
       <section className="perks-section">
-        <div className="flex flex-col items-center justify-center  mt-20 pt-10">
+        <div className="flex flex-col items-center justify-center pt-10 ">
           <img src={image3} alt="image3" />
           <br />
 
@@ -82,7 +82,7 @@ const Body = () => {
           </div>
         </div>
 
-        <div className="pb-80" style={{ marginTop: -1220 }}>
+        <div className="pb-80 bg-[#0c020b] " style={{ marginTop: -1220 }}>
           <img src={imagebg} alt="imagebg" />
         </div>
 
@@ -108,7 +108,7 @@ const Body = () => {
 
       {/* FOR iNFO SECTION */}
 
-      <section className="info-section">
+      <section className="info-section ">
         <div>
           <div className="flex flex-col items-center justify-center  mt-20 pt-10 mb-20">
             <img src={image4} alt="Why metaclub DAO" />
@@ -213,13 +213,13 @@ const Body = () => {
         </div>
 
         <div
-          className="flex justify-center items-center mb-10"
+          className="flex justify-center items-center mb-10 "
           style={{ marginTop: "70px" }}
         >
           <button className="button bg-purple-600 text-white py-2 px-6 rounded-5 mr-4 ml-4">
             Contact Us
           </button>
-          <button className="button inline-flex px-6 py-2 items-start rounded-5 border border-purple-200">
+          <button className="button inline-flex px-6 py-2 items-start rounded-5 border border-purple-200 text-white">
             Explore More
           </button>
         </div>
@@ -227,7 +227,7 @@ const Body = () => {
 
       {/* FOR FAQs SECTION */}
       <section className="FAQs-section">
-        <div className="flex items-center justify-center mb-12">
+        <div className="flex items-center justify-center">
           <img src={FAQs} alt="FAQs" />
         </div>
         <div>
