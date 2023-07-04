@@ -2,6 +2,10 @@ import React from "react";
 import design4 from "../images/design 4.png";
 import footer from "../images/footer.png";
 import logo2 from "../images/logo2.png";
+import twitter from "../images/twitter.png";
+import discord from "../images/discord.png";
+import telegram from "../images/telegram.png";
+
 const Footer = () => {
   return (
     <footer className="text-white">
@@ -36,13 +40,55 @@ const Footer = () => {
             </div>
           </div>
           <div className="footer-detail">
-            <div>
+            <div className="footer-logo">
               <img src={logo2} alt="footer-logo" />
             </div>
-            <div className="footer-table">
-              <div></div>
-              <div></div>
-              <div></div>
+            <div className="footer-table flex">
+              <div className="footer-section flex flex-col mr-36">
+                <h1 className="font-bold">LINKS</h1>
+                <a href="/" className="block py-3">
+                  Home
+                </a>
+                <a href="/" className="block py-3">
+                  Community
+                </a>
+                <a href="/" className="block py-3">
+                  Services
+                </a>
+              </div>
+              <div className="footer-section flex flex-col mr-36">
+                <h1 className="font-bold">RESOURCES</h1>
+                <a href="/" className="block py-3">
+                  About
+                </a>
+                <a href="/" className="block py-3">
+                  Resources
+                </a>
+                <a href="/" className="block py-3">
+                  Blog
+                </a>
+              </div>
+              <div className="footer-section flex flex-col">
+                <h1 className="font-bold">SOCIALS</h1>
+                <div className="flex items-center">
+                  <img src={twitter} alt="twitter" className="w-5 h-5 mr-2" />
+                  <a href="/" className="block py-3">
+                    Twitter
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <img src={discord} alt="discord" className="w-5 h-5 mr-2" />
+                  <a href="/" className="block py-3">
+                    Discord
+                  </a>
+                </div>
+                <div className="flex items-center">
+                  <img src={telegram} alt="telegram" className="w-5 h-5 mr-2" />
+                  <a href="/" className="block py-3">
+                    Telegram
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
           <hr className="footer-row" />
