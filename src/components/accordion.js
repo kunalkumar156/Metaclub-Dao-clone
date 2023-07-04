@@ -3,43 +3,112 @@ import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 const Accordion = () => {
   return (
-    <div className="w-full px-4 pt-16">
-      <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2">
+    <div className="w-full px-4 pt-12">
+      <div className="faq-div">
         <Disclosure>
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                <span>What is your refund policy?</span>
+              <Disclosure.Button className="faq-question flex w-full justify-between text-left">
+                <span>What is MetaClub DAO?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
                   } h-5 w-5 text-purple-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                If you're unhappy with your purchase for any reason, email us
-                within 90 days and we'll refund you in full, no questions asked.
+              <Disclosure.Panel className="faq-answer text-lg">
+                <span className="block mb-4">
+                  Meta Club DAO is a community first approach to build and
+                  empower NFT projects.
+                </span>
+
+                <span className="block">
+                  A place to inspire and push the industry standards for NFTs by
+                  delivering blue chip projects and offer world class services.
+                </span>
               </Disclosure.Panel>
             </>
           )}
         </Disclosure>
-        <Disclosure as="div" className="mt-2">
+        <hr className="faq-hr" />
+        <Disclosure as="div" className="mt-4">
           {({ open }) => (
             <>
-              <Disclosure.Button className="flex w-full justify-between rounded-lg bg-purple-100 px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                <span>Do you offer technical support?</span>
+              <Disclosure.Button className="faq-question flex w-full justify-between text-left">
+                <span>How can I become a part of MetaClub DAO?</span>
                 <ChevronUpIcon
                   className={`${
                     open ? "rotate-180 transform" : ""
                   } h-5 w-5 text-purple-500`}
                 />
               </Disclosure.Button>
-              <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                No.
+              <Disclosure.Panel className="faq-answer px-4 pt-4 pb-2 text-lg">
+                <span>
+                  Meta Club DAO is a community first approach to build and
+                  empower NFT projects.
+                </span>
+
+                <span>
+                  A place to inspire and push the industry standards for NFTs by
+                  delivering blue chip projects and offer world class services.
+                </span>
               </Disclosure.Panel>
             </>
           )}
         </Disclosure>
+        <hr className="faq-hr" />
+        <Disclosure as="div" className="mt-4">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="faq-question flex w-full justify-between text-left">
+                <span>How can I become a part of MetaClub DAO?</span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? "rotate-180 transform" : ""
+                  } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="faq-answer px-4 pt-4 pb-2 text-lg">
+                <span>
+                  Meta Club DAO is a community first approach to build and
+                  empower NFT projects.
+                </span>
+
+                <span>
+                  A place to inspire and push the industry standards for NFTs by
+                  delivering blue chip projects and offer world class services.
+                </span>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+        <hr className="faq-hr" />
+        <Disclosure as="div" className="mt-4">
+          {({ open }) => (
+            <>
+              <Disclosure.Button className="faq-question flex w-full justify-between text-left">
+                <span>How can I become a part of MetaClub DAO?</span>
+                <ChevronUpIcon
+                  className={`${
+                    open ? "rotate-180 transform" : ""
+                  } h-5 w-5 text-purple-500`}
+                />
+              </Disclosure.Button>
+              <Disclosure.Panel className="faq-answer px-4 pt-4 pb-2 text-lg ">
+                <span>
+                  Meta Club DAO is a community first approach to build and
+                  empower NFT projects.
+                </span>
+
+                <span>
+                  A place to inspire and push the industry standards for NFTs by
+                  delivering blue chip projects and offer world class services.
+                </span>
+              </Disclosure.Panel>
+            </>
+          )}
+        </Disclosure>
+        <hr className="faq-hr" />
       </div>
     </div>
   );

@@ -226,12 +226,15 @@ const Body = () => {
       </section>
 
       {/* FOR FAQs SECTION */}
-      <section className="FAQs-section">
+      <section className="FAQs-section pb-24">
         <div className="flex items-center justify-center">
           <img src={FAQs} alt="FAQs" />
         </div>
         <div>
           <Accordion />
+          {/* <div className="faq-img-div">
+            <img src={design3} alt="design3" className="faq-design" />
+          </div> */}
         </div>
       </section>
     </body>
