@@ -20,7 +20,7 @@ import services3 from "../images/services3.png";
 import services4 from "../images/services4.png";
 import FAQs from "../images/FAQs.png";
 import Accordion from "./accordion";
-// import design3 from "../images/design3.png";
+import design3 from "../images/design3.png";
 const Body = () => {
   return (
     <body className="bg-[#0c020b]">
@@ -223,6 +223,10 @@ const Body = () => {
             Explore More
           </button>
         </div>
+
+        <div className="faq-img-div">
+          <img src={design3} alt="design3" className="faq-design" />
+        </div>
       </section>
 
       {/* FOR FAQs SECTION */}
@@ -232,9 +236,6 @@ const Body = () => {
         </div>
         <div>
           <Accordion />
-          {/* <div className="faq-img-div">
-            <img src={design3} alt="design3" className="faq-design" />
-          </div> */}
         </div>
       </section>
     </body>

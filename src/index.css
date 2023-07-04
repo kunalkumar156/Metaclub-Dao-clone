@@ -196,6 +196,9 @@ header {
 }
 
 /* Services section css */
+.services-section {
+  position: relative;
+}
 
 .services-div {
   margin: 10px;
@@ -238,6 +241,18 @@ header {
 }
 
 /* FAQs section css */
+
+.faq-img-div {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.faq-design {
+  width: auto; /* Adjust the width as needed */
+  height: auto; /* Adjust the height as needed */
+  margin-top: 430px;
+}
 
 .FAQs-section {
   background-image: linear-gradient(
