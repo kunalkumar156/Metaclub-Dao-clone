@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="demo-screenshot.png" alt="Demo Screenshot" />
+  <img src="src/images/metaclub-dao.png" alt="Demo Screenshot" />
 </p>
 
 
